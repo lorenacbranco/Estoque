@@ -13,7 +13,7 @@ void Ingrediente::detalhesI() const {
     cout << "Disponibilidade: " << disponibilidadeI << endl;
     cout << "Quantidade.....: " << quantidadeI << endl;
     cout << "Ingrediente....: " << nomeI << endl;
-    cout << "Classificação..: " << tipoI << endl;
+    cout << "Classificaï¿½ï¿½o..: " << tipoI << endl;
 }
 
 // Muda o operador para false ou true de acordo com a quantidade de ingredientes
