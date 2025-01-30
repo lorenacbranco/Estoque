@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-#include "Bebida.h"
+#include "bebida.h"
 
 
 //Exibe os detalhes das bebidas

@@ -5,18 +5,18 @@
 #include <iostream>
 using namespace std;
 
-#include "Produto.h" //Inclui a classe Produto
+#include "produto.h" //Inclui a classe Produto
 
-class Bebida : public Produto{ //Define como herança de Produto
+class Bebida : public Produto{ //Define como heranÃ§a de Produto
 private:
     int tamanho; //Tamanho da bebida em ml
 
 public:
 
-     Bebida(bool disponibilidade, double preco, string nome, int tamanho)
+    Bebida(bool disponibilidade, double preco, string nome, int tamanho)
         : Produto(disponibilidade, preco, nome), tamanho(tamanho) {} //Construtor chamando a classe produto
 
-    //Método que exibe os detalhes da bebida
+    //MÃ©todo que exibe os detalhes da bebida
     void detalhes() const override;
 
     //Get e Set
