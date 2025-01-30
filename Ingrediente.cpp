@@ -2,14 +2,10 @@
 #include <string>
 using namespace std;
 
-#include "Ingrediente.h"
+#include "ingrediente.h"
 
-// Construtor padrão sem argumentos (necessário para o vetor)
-Ingrediente::Ingrediente()
-    : quantidadeI(0), nomeI(""), tipoI(""), disponibilidadeI(false) {}
-
-// Construtor normal
-Ingrediente::Ingrediente(int quantidadeI, std::string nomeI, std::string tipoI, bool disponibilidadeI)
+// Construtor
+Ingrediente::Ingrediente(int quantidadeI, string nomeI, string tipoI, bool disponibilidadeI)
     : quantidadeI(quantidadeI), nomeI(nomeI), tipoI(tipoI), disponibilidadeI(disponibilidadeI) {}
 
 // Exibe os detalhes do produto
@@ -17,7 +13,7 @@ void Ingrediente::detalhesI() const {
     cout << "Disponibilidade: " << disponibilidadeI << endl;
     cout << "Quantidade.....: " << quantidadeI << endl;
     cout << "Ingrediente....: " << nomeI << endl;
-    cout << "Classifica��o..: " << tipoI << endl;
+    cout << "Classificação..: " << tipoI << endl;
 }
 
 // Muda o operador para false ou true de acordo com a quantidade de ingredientes

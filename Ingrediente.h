@@ -1,35 +1,33 @@
-#ifndef INGREDIENTE_H_INCLUDED
-#define INGREDIENTE_H_INCLUDED
+#ifndef CLASSES_EDOO_H_INCLUDED
+#define CLASSES_EDOO_H_INCLUDED
 
 #include <string>
 #include <iostream>
+using namespace std;
 
 class Ingrediente {
 private:
-    int quantidadeI;
-    std::string nomeI;
-    std::string tipoI;
-
+    int quantidadeI;  //Quantidade do Ingrediente
+    string nomeI;    // Nome do Ingrediente
+    string tipoI;    // Classificação do Ingrediente
 public:
-    bool disponibilidadeI;
+    bool disponibilidadeI;    // Disponibilidade do Ingrediente
 
-    // Construtor PADR�O sem argumentos (necess�rio para o vetor)
-    Ingrediente();
+    Ingrediente(int quantidadeI, string nomeI, string tipoI, bool disponibilidadeI); // Construtor
 
-    // Construtor normal
-    Ingrediente(int quantidadeI, std::string nomeI, std::string tipoI, bool disponibilidadeI);
+    // Métodos
+    virtual void detalhesI() const; // Exibe as informações do ingrediente
+    void NaoDisponivelI(); // Muda o operador para false ou true de acordo com a quantidade de ingredientes
 
-    void detalhesI() const;
-    void NaoDisponivelI();
-
+    // Getters e Setters
     int getQuantidadeI() const;
     void setQuantidadeI(int novaQuantidadeI);
 
-    std::string getNomeI() const;
-    void setNomeI(std::string novoNomeI);
+    string getNomeI() const;
+    void setNomeI(string novoNomeI);
 
-    std::string getTipoI() const;
-    void setTipoI(std::string novoTipoI);
+    string getTipoI() const;
+    void setTipoI(string novoTipoI);
 };
 
-#endif // INGREDIENTE_H_INCLUDED
+#endif
