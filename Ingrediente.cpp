@@ -4,8 +4,12 @@ using namespace std;
 
 #include "Ingrediente.h"
 
-// Construtor
-Ingrediente::Ingrediente(int quantidadeI, string nomeI, string tipoI, bool disponibilidadeI)
+// Construtor padrão sem argumentos (necessário para o vetor)
+Ingrediente::Ingrediente()
+    : quantidadeI(0), nomeI(""), tipoI(""), disponibilidadeI(false) {}
+
+// Construtor normal
+Ingrediente::Ingrediente(int quantidadeI, std::string nomeI, std::string tipoI, bool disponibilidadeI)
     : quantidadeI(quantidadeI), nomeI(nomeI), tipoI(tipoI), disponibilidadeI(disponibilidadeI) {}
 
 // Exibe os detalhes do produto
