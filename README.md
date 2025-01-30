@@ -16,25 +16,39 @@ Nosso objetivo foi desenvolver um sistema para controle de pedidos e faturamento
 ______________________________________________________________________________________________________________________________________________________________
 
 # Ferramentas e Bibliotecas Utilizadas
--> QT Creator:
-- Bibliotecas de Interface Gráfica (QtWidgets)
-QApplication → Controla o loop de eventos da aplicação.
-QWidget → Base para janelas e componentes da UI.
-QPushButton → Botões interativos na interface.
-QTextEdit → Área de texto para exibir o cardápio e pedidos.
-QVBoxLayout → Layout vertical para organizar os widgets.
-QMessageBox → Exibe mensagens de erro e confirmação.
-QInputDialog → Exibe caixas de entrada para pedidos.
+- QT Creator:
 
-- Bibliotecas de Banco de Dados (QtSql)
-QSqlQuery → Para executar comandos SQL (SELECT, INSERT, etc.).
-QSqlError → Para capturar erros do banco de dados.
-QVariant → Para manipular dados genéricos vindos do banco.
+-> *Bibliotecas de Interface Gráfica (QtWidgets)*
 
--> Sqlite
+**QApplication** → Controla o loop de eventos da aplicação.
 
--> Bibliotecas Essenciais do C++
-iostream → Entrada e saída de dados (depuração).
-string → Manipulação de textos (nomes de produtos, erros, etc.)
+**QWidget** → Base para janelas e componentes da UI.
+
+**QPushButton** → Botões interativos na interface.
+
+**QTextEdit** → Área de texto para exibir o cardápio e pedidos.
+
+**QVBoxLayout** → Layout vertical para organizar os widgets.
+
+**QMessageBox** → Exibe mensagens de erro e confirmação.
+
+**QInputDialog** → Exibe caixas de entrada para pedidos.
+
+
+-> *Bibliotecas de Banco de Dados (QtSql)*
+
+**QSqlQuery** → Para executar comandos SQL (SELECT, INSERT, etc.).
+
+**QSqlError** → Para capturar erros do banco de dados.
+
+**QVariant** → Para manipular dados genéricos vindos do banco.
+
+- Sqlite
+
+- Bibliotecas Essenciais do C++
+
+**iostream** → Entrada e saída de dados (depuração).
+
+**string** → Manipulação de textos (nomes de produtos, erros, etc.)
 
 
