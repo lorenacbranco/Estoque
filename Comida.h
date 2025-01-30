@@ -1,36 +1,35 @@
 #ifndef COMIDA_H_INCLUDED
 #define COMIDA_H_INCLUDED
 
-#include "Produto.h"
-#include "Ingrediente.h"
-#include <vector>
 #include <string>
 #include <iostream>
+using namespace std;
 
-class Comida : public Produto {
+#include "Produto.h" //Inclui a classe Produto
+
+class Comida : public Produto{ //Define como herança de Produto
 private:
-    int tempoPreparo;
-    std::string tipo;
-    std::vector<Ingrediente> ingredientes;
-    std::vector<std::string> ingredientesNomes;  // Novo atributo para armazenar os nomes dos ingredientes
-
+    int tempoPreparo; //Tempo médio de preparo em minutos
+    string tipo; //Tipo da comida (se é acompanhamento, se é hambúrguer smash...)
 public:
-    // Construtor atualizado para aceitar ingredientes como vetor de strings
-    Comida(bool disponibilidade, double preco, std::string nome, int tempoPreparo, std::string tipo, std::vector<std::string> ingredientesNomes);
+
+    Comida(bool disponibilidade, double preco, string nome, int tempoPreparo, string tipo); //Construtor
+
+    //Métodos
 
     void detalhes() const override;
-    void PrecoPorTipo();
-    void fazerPedido();
-    void adicionarIngrediente(const Ingrediente& ingrediente);
+    void PrecoPorTipo(); //Define os preços de acordo com a classificação da comida
 
+
+    // Getters e Setters
     int getPreparo() const;
     void setPreparo(int novoPreparo);
 
-    std::string getTipo() const;
-    void setTipo(std::string novoTipo);
+    string getTipo() const;
+    void setTipo(string novoTipo);
 
-    // Novo m�todo para acessar os nomes dos ingredientes
-    std::vector<std::string> getIngredientesNomes() const;
 };
+
+
 
 #endif // COMIDA_H_INCLUDED
