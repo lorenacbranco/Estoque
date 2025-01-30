@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-#include "Produto.h"
+#include "produto.h"
 
 // Construtor
 Produto::Produto(bool disponibilidade, double preco, string nome)
@@ -35,3 +35,4 @@ string Produto::getNome() const {
 void Produto::setNome(string novoNome) {
     nome = novoNome;
 }
+

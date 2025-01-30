@@ -7,7 +7,7 @@ using namespace std;
 
 class Produto {
 protected:
-    double preco;       // Preço do produto
+    double preco;       // PreÃ§o do produto
 private:
     string nome;        // Nome do produto
 
@@ -16,8 +16,8 @@ public:
 
     Produto(bool disponibilidade, double preco, string nome); // Construtor
 
-    // Métodos
-    virtual void detalhes() const; // Exibe as informações do produto
+    // MÃ©todos
+    virtual void detalhes() const; // Exibe as informaÃ§Ãµes do produto
 
     // Getters e Setters
     double getPreco() const;
