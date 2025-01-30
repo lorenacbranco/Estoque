@@ -1,21 +1,21 @@
 # Projeto Sistema de Hamburgueria
 
-# Desenvolvedores
+## Desenvolvedores
 <https://github.com/leticiauchoa>
 
 <https://github.com/lorenacbranco>
 
 <https://github.com/Duda-mecb>
 _______________________________________________________________________________________________________________________________________________________________
-# Sobre o projeto
+## Sobre o projeto
 O projeto foi estruturado em C++ seguindo os princípios da Programação Orientada a Objetos (POO), garantindo uma organização modular e de fácil compreensão. Cada elemento do sistema foi modelado como uma classe, permitindo uma representação mais intuitiva e próxima do mundo real. Além disso, a POO possibilitou a reutilização de código, reduzindo redundâncias e tornando o desenvolvimento mais eficiente. 
 _______________________________________________________________________________________________________________________________________________________________
-# Objetivo
+## Objetivo
 Nosso objetivo foi desenvolver um sistema para controle de pedidos e faturamento de uma hamburgueria, proporcionando uma gestão eficiente dos produtos, ingredientes e estoque. O sistema deve permitir o registro e acompanhamento dos pedidos, calculando o faturamento com base nas vendas realizadas.
 
 ______________________________________________________________________________________________________________________________________________________________
 
-# Ferramentas e Bibliotecas Utilizadas
+## Ferramentas e Bibliotecas Utilizadas
 - QT Creator:
 
 -> *Bibliotecas de Interface Gráfica (QtWidgets)*
