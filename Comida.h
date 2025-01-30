@@ -1,33 +1,36 @@
 #ifndef COMIDA_H_INCLUDED
 #define COMIDA_H_INCLUDED
 
+#include "Produto.h"
+#include "Ingrediente.h"
+#include <vector>
 #include <string>
 #include <iostream>
-#include <vector>  // Para o uso de lista de ingredientes
-#include "Produto.h"  //classe Produto
-#include "Ingrediente.h"  //classe Ingrediente
-
-using namespace std;
 
 class Comida : public Produto {
 private:
-    int tempoPreparo;  // Tempo medio de preparo em minutos
-    string tipo;  // Tipo da comida (se e acompanhamento, hamberguer, etc)
-    vector<Ingrediente> ingredientes;  // Lista de ingredientes (usando vector de Ingrediente)
+    int tempoPreparo;
+    std::string tipo;
+    std::vector<Ingrediente> ingredientes;
+    std::vector<std::string> ingredientesNomes;  // Novo atributo para armazenar os nomes dos ingredientes
+
 public:
-    Comida(bool disponibilidade, double preco, string nome, int tempoPreparo, string tipo); // Construtor
+    // Construtor atualizado para aceitar ingredientes como vetor de strings
+    Comida(bool disponibilidade, double preco, std::string nome, int tempoPreparo, std::string tipo, std::vector<std::string> ingredientesNomes);
 
-    // Metodos
     void detalhes() const override;
-    void PrecoPorTipo(); // Define os precos de acordo com a classificacao da comida
-    void adicionarIngrediente(const Ingrediente& ingrediente);  //Adiciona ingredientes na comida
-    void fazerPedido();  //Subtrai a quantidade de ingredientes
+    void PrecoPorTipo();
+    void fazerPedido();
+    void adicionarIngrediente(const Ingrediente& ingrediente);
 
-    // Getters e Setters
     int getPreparo() const;
     void setPreparo(int novoPreparo);
-    string getTipo() const;
-    void setTipo(string novoTipo);
+
+    std::string getTipo() const;
+    void setTipo(std::string novoTipo);
+
+    // Novo método para acessar os nomes dos ingredientes
+    std::vector<std::string> getIngredientesNomes() const;
 };
 
 #endif // COMIDA_H_INCLUDED

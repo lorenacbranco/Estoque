@@ -1,85 +1,47 @@
-#include <iostream>
-#include <string>
-#include <vector>
 #include "Comida.h"
 
-using namespace std;
+// Construtor atualizado para aceitar nomes de ingredientes
+Comida::Comida(bool disponibilidade, double preco, std::string nome, int tempoPreparo, std::string tipo, std::vector<std::string> ingredientesNomes)
+    : Produto(disponibilidade, preco, nome), tempoPreparo(tempoPreparo), tipo(tipo), ingredientesNomes(ingredientesNomes) {}
 
-// Construtor
-Comida::Comida(bool disponibilidade, double preco, string nome, int tempoPreparo, string tipo)
-    : Produto(disponibilidade, preco, nome), tempoPreparo(tempoPreparo), tipo(tipo) {}
-
-    //Metodos
-
-// Exibe os detalhes das comidas
+// Exibe detalhes da comida
 void Comida::detalhes() const {
     Produto::detalhes();
-    cout << "Tempo de Preparo: " << tempoPreparo << endl;
-    cout << "Tipo............: " << tipo << endl;
-}
+    std::cout << "Tempo de Preparo: " << tempoPreparo << " minutos" << std::endl;
+    std::cout << "Tipo............: " << tipo << std::endl;
 
-// Define os preços de acordo com a classificação da comida
-void Comida::PrecoPorTipo() {
-    if (tipo == "Acompanhamentos") {
-        setPreco(27.90);
-    }
-    else if (tipo == "Blend MVK") {
-        setPreco(33.90);
-    }
-    else if (tipo == "Hamburguer Double Smash") {
-        setPreco(34.90);
-    }
-    else if (tipo == "Hamburguer Smash") {
-        setPreco(22.90);
-    }
-    else if (tipo == "Blend Frango") {
-        setPreco(30.90);
-    }
-    else if (tipo == "Sanduiches") {
-        setPreco(28.90);
-    }
-    else if (tipo == "Cachorro Quente") {
-        setPreco(23.90);
+    std::cout << "Ingredientes:\n";
+    for (const auto& ingrediente : ingredientes) {
+        std::cout << "- " << ingrediente.getNomeI() << " (Quantidade Disponível: " << ingrediente.getQuantidadeI() << ")\n";
     }
 }
 
-//Adiciona ingredientes
+// Adiciona um ingrediente ao prato
 void Comida::adicionarIngrediente(const Ingrediente& ingrediente) {
     ingredientes.push_back(ingrediente);
 }
 
-//Subtrai a quantidade de ingredientes
+// Método para fazer o pedido (reduzir estoque)
 void Comida::fazerPedido() {
-    for (Ingrediente& ing : ingredientes) {
-        int quantidade = ing.getQuantidadeI();
-        if (quantidade > 0) {
-            // Subtrai uma unidade do ingrediente
-            ing.setQuantidadeI(quantidade - 1);
-            cout << "Ingrediente " << ing.getNomeI() << " agora tem " << ing.getQuantidadeI() << " unidades restantes." << endl;
+    std::cout << "\nPedido realizado! Atualizando estoque de ingredientes...\n";
+    for (auto& ingrediente : ingredientes) {
+        if (ingrediente.getQuantidadeI() > 0) {
+            ingrediente.setQuantidadeI(ingrediente.getQuantidadeI() - 1);
         } else {
-            cout << "Ingrediente " << ing.getNomeI() << " está fora de estoque." << endl;
+            std::cout << "Aviso: Ingrediente " << ingrediente.getNomeI() << " está em falta!\n";
+            disponibilidade = false;
         }
     }
 }
 
+// Novo método para obter os nomes dos ingredientes
+std::vector<std::string> Comida::getIngredientesNomes() const {
+    return ingredientesNomes;
+}
+
 // Getters e Setters
-int Comida::getPreparo() const {
-    return tempoPreparo;
-}
+int Comida::getPreparo() const { return tempoPreparo; }
+void Comida::setPreparo(int novoPreparo) { tempoPreparo = novoPreparo; }
 
-void Comida::setPreparo(int novoPreparo) {
-    if (novoPreparo >= 0) {
-        tempoPreparo = novoPreparo;
-    } else {
-        cout << "Erro: tempo de preparo inválido!" << endl;
-    }
-}
-
-string Comida::getTipo() const {
-    return tipo;
-}
-
-void Comida::setTipo(string novoTipo) {
-    tipo = novoTipo;
-    PrecoPorTipo();
-}
+std::string Comida::getTipo() const { return tipo; }
+void Comida::setTipo(std::string novoTipo) { tipo = novoTipo; }
