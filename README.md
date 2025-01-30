@@ -2,6 +2,9 @@
 
 # Desenvolvedores
 <https://github.com/leticiauchoa>
+
+<https://github.com/lorenacbranco>
+
 <https://github.com/Duda-mecb>
 _______________________________________________________________________________________________________________________________________________________________
 # Sobre o projeto
