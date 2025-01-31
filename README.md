@@ -15,7 +15,13 @@ Nosso objetivo foi desenvolver um sistema para controle de pedidos e faturamento
 
 ______________________________________________________________________________________________________________________________________________________________
 
-## Ferramentas e Bibliotecas Utilizadas
+## Instruções de uso
+
+
+
+
+_______________________________________________________________________________________________________________________________________________________________
+## Ferramentas e Bibliotecas utilizadas
 - QT Creator:
 
 -> *Bibliotecas de Interface Gráfica (QtWidgets)*
@@ -50,5 +56,16 @@ ________________________________________________________________________________
 **iostream** → Entrada e saída de dados (depuração).
 
 **string** → Manipulação de textos (nomes de produtos, erros, etc.)
+
+__________________________________________________________________________________________________________________________________________________
+## Prints da tela
+
+![Inicio do programa](https://lh3.googleusercontent.com/drive-storage/AJQWtBMUKtC_0uiQAO5WfmgVGd4RiIwosjvc810_HokLnNGmubrkzkYd5kD19vFj2feFxU8bFFRDlwIlyA0pUaxOlwOMsEqtRvOS_-gORbCwSiVnNgc=w1349-h641)
+![Mostrar cardápio](https://lh3.googleusercontent.com/drive-storage/AJQWtBONLVqLqV9ZuH2iPLeRW3uVjc6t1mYp_Lg1U2T-QPLw2OdrYVL6L1GE_addwQWgmnCbykq-eWcPHH5pFTrTha_wIWlVbClAjmhnHtfbRFIUvhg=w1349-h641)
+![Fazer pedido](https://lh3.googleusercontent.com/drive-storage/AJQWtBNUWvzwu-aqztIy5He0SBRgyzyMiBWVAtHObcEbXkdGrBFCu79UEJ3IBDD3EMItDMP95WdnI1GtImX8zZr-E7BjAD0Rig92n8518p_KGcj2Jik=w1349-h641)
+![Histórico de pedidos](https://lh3.googleusercontent.com/drive-storage/AJQWtBMlwJ1t45VkcHbqoaMyZwsdPsrS6eZ9NS_qlcz02rBtYhgd8gjdNRQCH3uTmju79GfRJEugcdRWDTCe0iQ4NFFLY6cCOq1d5DgebqqQvNjwsk0=w1349-h641 )
+![Limpar histórico de pedidos](https://lh3.googleusercontent.com/drive-storage/AJQWtBMtFFVCEHHIJKUbBrNa9MjIALDEeswOI0m-KfIZgh41YIAvsx9KRYp9dEiwI3ZLCeAsHK7en5ypeGdxByiSWt1YPU-bWOL00JMSQnmOylA9Ra4=w1349-h641)
+
+
 
 
