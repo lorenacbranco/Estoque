@@ -18,7 +18,13 @@ ________________________________________________________________________________
 ## Instruções de uso
 
 
-
+- Fazer download do arquivo "controlNovo.db", localizado na pasta "mav" e abrir pelo SQLiteStudio;
+- Copiar o path do banco de dados no seu computador;
+- Fazer download do repositório na biblioteca no computador (git);
+- Abrir o QtCreator -> 'Abrir Projeto' -> selecionar o arquivo "mav.pro";
+- Abrir o arquivo "conecta.h";
+- Editar a linha 13 do código para colocar o seu path do SQLite;
+- Run.
 
 _______________________________________________________________________________________________________________________________________________________________
 ## Ferramentas e Bibliotecas utilizadas
