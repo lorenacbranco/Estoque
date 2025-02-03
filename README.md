@@ -70,7 +70,7 @@ ________________________________________________________________________________
 ![Mostrar cardápio](https://github.com/lorenacbranco/hamburgueria/blob/main/imagens/IMG-20250130-WA0146.jpg?raw=true)
 ![Fazer pedido](https://github.com/lorenacbranco/hamburgueria/blob/main/imagens/IMG-20250130-WA0143.jpg?raw=true)
 ![Histórico de pedidos](https://github.com/lorenacbranco/hamburgueria/blob/main/imagens/IMG-20250130-WA0144.jpg?raw=true)
-![Limpar histórico de pedidos]([https://lh3.googleusercontent.com/drive-storage/AJQWtBMtFFVCEHHIJKUbBrNa9MjIALDEeswOI0m-KfIZgh41YIAvsx9KRYp9dEiwI3ZLCeAsHK7en5ypeGdxByiSWt1YPU-bWOL00JMSQnmOylA9Ra4=w1349-h641](https://github.com/lorenacbranco/hamburgueria/blob/main/imagens/IMG-20250130-WA0147.jpg?raw=true))
+![Limpar histórico de pedidos](https://github.com/lorenacbranco/hamburgueria/blob/main/imagens/IMG-20250130-WA0147.jpg?raw=true)
 
 
 
